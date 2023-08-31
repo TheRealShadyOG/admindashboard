@@ -85,6 +85,22 @@
 
 .upload {
     grid-area: upload;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    padding-right: 50px;
+}
+
+.upload > button {
+    height: 40px;
+    width: 100px;
+    border: 2px solid #94a3b8;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #f8fafc;
+    background-color: #475569;
 }
 
 .sidebar {
