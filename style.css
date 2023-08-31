@@ -68,6 +68,19 @@
 
 .welcome {
     grid-area: welcome;
+    align-items: center;
+
+    display: flex;
+    gap: 20px;
+    padding-left: 50px;
+}
+
+.welcome > div {
+    font-weight: bold;
+}
+
+.welcome > div > div:last-child {
+    font-size: 24px;
 }
 
 .upload {
