@@ -15,6 +15,27 @@
 
 .header {
     grid-area: header;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "search userinfo"
+                         "welcome upload";
+}
+
+.search {
+    grid-area: search;
+}
+
+.userinfo {
+    grid-area: userinfo;
+}
+
+.welcome {
+    grid-area: welcome; 
+}
+
+.upload {
+    grid-area: upload;
 }
 
 .sidebar {
