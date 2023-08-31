@@ -20,6 +20,8 @@
     grid-template-columns: 1.5fr 1fr;
     grid-template-areas: "search userinfo"
                          "welcome upload";
+
+    background-color: #f8fafc;
 }
 
 .search {
@@ -46,6 +48,8 @@
     grid-template-areas: "logo"
                          "pages"
                          "resources";
+
+    background-color: #475569;
 }
 
 .logo {
@@ -68,6 +72,8 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "projects announcements"
                          "projects trending";
+    
+    background-color: #cbd5e1;
 }
 
 .projects {
