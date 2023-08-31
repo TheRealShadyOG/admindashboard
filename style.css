@@ -114,10 +114,20 @@
                          "resources";
 
     background-color: #475569;
+    color: #f8fafc;
+    padding-left: 20px;
+    padding-right: 8px;
+
 }
 
 .logo {
     grid-area: logo;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .pages {
@@ -126,6 +136,21 @@
 
 .resources {
     grid-area: resources;
+}
+
+.pages, .resources {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 8px;
+}
+
+.pages > div, .resources > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
 }
 
 .main {
@@ -155,6 +180,11 @@
 img {
     height: 25px;
     width: 25px;
+}
+
+.logo > img {
+    height: 50px;
+    width: 50px;
 }
 
 .profilepic {
