@@ -62,4 +62,22 @@
 
 .main {
     grid-area: main;
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "projects announcements"
+                         "projects trending";
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
