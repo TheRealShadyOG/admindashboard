@@ -42,15 +42,26 @@
     background-color: #cbd5e1;
     flex: 1;
     max-width: 750px;
+    text-align: center;
 }
-
 
 .userinfo {
     grid-area: userinfo;
+    align-items: center;
+
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    padding-right: 75px;
+}
+
+.userinfo > div {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .welcome {
-    grid-area: welcome; 
+    grid-area: welcome;
 }
 
 .upload {
@@ -113,6 +124,7 @@ img {
 .profilepic {
     height: 50px;
     width: 50px;
+    border: 1px solid #94a3b8;
     border-radius: 25px;
 }
 
