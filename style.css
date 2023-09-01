@@ -157,12 +157,21 @@
     grid-area: main;
 
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "projects announcements"
                          "projects trending";
     
     background-color: #cbd5e1;
+    padding: 24px 20px 32px 20px;
+
+    color: #334155;
+}
+
+.mainheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .projects {
@@ -175,6 +184,29 @@
 
 .trending {
     grid-area: trending;
+}
+
+.trending > div:last-child {
+    background-color: #f8fafc;
+    border: 2px solid #94a3b8;
+    border-radius: 15px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.trendingprofile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 200px;
+}
+
+.username {
+    font-weight: bold;
 }
 
 img {
