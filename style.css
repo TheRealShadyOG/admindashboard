@@ -166,6 +166,7 @@
     padding: 24px 20px 32px 20px;
 
     color: #334155;
+    overflow: hidden;
 }
 
 .mainheader {
@@ -176,7 +177,43 @@
 
 .projects {
     grid-area: projects;
+    padding-right: 16px;
+    margin-right: 16px;
+    overflow-y: auto;
 }
+
+.projectsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.projectsgrid > div {
+    background-color: #f8fafc;
+    border: 1px solid #94a3b8;
+    border-left: 5px solid #334155;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #475569;
+    padding: 16px;
+    position: relative;
+    height: 150px;
+}
+
+.cardheader {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cardicons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cardicons > img {
+    padding-right: 10px;
+} 
 
 .announcements {
     grid-area: announcements;
